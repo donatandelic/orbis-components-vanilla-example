@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbis Components - Vanilla JS</title>
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+<body>
+    <div id="container">
+        <h1>Vanilla JS - Orbis React Components</h1>
+        <div style="margin: 1rem auto; text-align: center;">
+            <button id="fromHtml">Mount Orbis from .html</button>
+            <button id="directFromApp">Mount Orbis From App.js</button>
+            <button onclick="unmountReactRoot('div#app')">Unmount React</button>
+        </div>
+        <div id="app"></div>
+    </div>
+
+    <script>
+        window.global = window
+        window.process = { env: {} }
+    </script>
+    <script type="module" src="js/app.js"></script>
+    <script>
+        const button = document.getElementById("fromHtml")
+        button.addEventListener("click", mountComponent)
+
+        function mountComponent(){
+            window.mountOrbisDiscussion('div#app', { 
+                context: "kjzl6cwe1jw149aqb5rog80x6yibov54x0tfdcl84zmidwyyxq1o2qvtgq29y6f",
+                theme: "kjzl6cwe1jw14a0xf5jlw22c4rlj2b46e0w9naboogejh2ts3v9299oojgrb4qc"
+            })
+        }
+    </script>
+</body>
+</html>

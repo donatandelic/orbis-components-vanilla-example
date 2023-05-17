@@ -1,0 +1,21 @@
+{
+  "name": "orbis-components-vanilla-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@orbisclub/components": "^0.2.4"
+  },
+  "devDependencies": {
+    "vite": "^4.3.7",
+    "vite-plugin-node-polyfills": "^0.8.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
